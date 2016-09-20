@@ -1,6 +1,45 @@
-.Experience, .Student
+.Experience, .Student, .Open-Source
   > *
     margin-bottom: 30px
+
+.Experience
+  &__Options
+
+    > *
+      display: inline-block
+
+    > div
+      font-size: 0.9em
+      color: gray
+
+  &__Button
+    margin-top: -20px
+    margin-left: 10px
+    display: inline-block
+    padding-top: 6px
+    padding-bottom: 4px
+    padding-right: 8px
+    padding-left: 8px
+    background-color: lighten(grey, 34)
+    transform: rotate(-2.5deg)
+    transition: all 0.2s
+
+    &__Anchor
+      text-decoration: none
+      color: darken(grey, 10)
+
+    &:hover
+      transform: rotate(2.5deg) scale(1.1)
+
+
+.Open-Source
+
+  > p
+    color: gray
+    font-size: 0.9em
+
+    > a
+      color: black
 
 .Work-Item
 
@@ -12,6 +51,8 @@
       padding-right: 15px
 
       &--Company
+        font-family: "PragmataPro"
+        letter-spacing: -1px
         font-size: 1.4em
 
       &--Dates
@@ -28,12 +69,65 @@
         font-weight: 500
         text-transform: uppercase
 
+  &__Tech
+    display: flex
+
+    &__Child
+      background-color: lighten(gray, 37)
+      font-size: 0.65em
+      font-family: "PragmataPro"
+      padding: 10px 16px
+      margin-top: 10px
+      color: gray
+
+
+      &--React
+        &:hover
+          background: #b2c2dd
+          color: darken(#b2c2dd, 25)
+
+      &--Redux
+        &:hover
+          background: #764eb9
+          color: lighten(#764eb9, 38)
+
+      &--JavaScript
+        &:hover
+          background: #f1da4e
+
+      &--CSS
+        &:hover
+          background: darken(#2ba8e0, 10)
+          color: lighten(#2ba8e0, 38)
+
+      &--Ruby
+        &:hover
+          background: #b1130a
+          color: lighten(#b1130a, 46)
+
+      &--Node
+        &:hover
+          background: #90c53f
+          color: darken(#90c53f, 30)
+
+      &--SQL
+        &:hover
+          background: #c1d2d9
+
+
   &__Content
     padding-top: 10px
     font-size: 0.85em
     color: darken(gray, 5)
     max-width: 700px
     letter-spacing: 0.5px
+
+    &__Github
+      font-size: 0.9em
+      padding-bottom: 6px
+      
+      a
+        color: black
 
     > p
       padding: 5px 0

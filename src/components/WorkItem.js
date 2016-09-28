@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Match from 'react-router/Match'
+import { Match } from "react-router"
 
 const name = "Work-Item__Header"
 const child = "Work-Item__Tech__Child"

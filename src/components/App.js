@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Match from 'react-router/Match'
+import { Match } from "react-router"
 
 import '../styles/index.sass'
 import About from './About'

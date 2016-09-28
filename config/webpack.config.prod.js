@@ -86,6 +86,11 @@ module.exports = {
       }
     ],
     loaders: [
+      {
+        test: /\.sass$/,
+        include: paths.appSrc,
+        loaders: ["style", "css", "sass"]
+      },
       // Process JS with Babel.
       {
         test: /\.(js|jsx)$/,

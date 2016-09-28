@@ -9,15 +9,23 @@ function generateTechName(tech) {
     case "React":
     case "Redux":
       return tech
+    case "Unity":
+      return "Redux"
     case "MySQL":
     case "PostgreSQL":
+    case "Wordpress":
+    case "PHP":
       return "SQL"
     case "JavaScript/ES6":
+    case "C#":
+    case "Yii":
       return "JavaScript"
     case "Ruby on Rails":
       return "Ruby"
     case "Node.JS":
       return "Node"
+    case "CSS/BEM":
+      return "CSS"
   }
 }
 
@@ -45,14 +53,16 @@ class WorkItem extends Component {
         <Match pattern="tech" render={() => (
 
           <div className="Work-Item__Tech">
-            {this.props.tech.map((item, i) =>
-              <div
-                key={i}
-                className={`${child} ${child}--${generateTechName(item)}`}
-              >
-                {item}
-              </div>
-            )}
+            {this.props.tech 
+              
+              ? this.props.tech.map((item, i) =>
+                <div
+                  key={i}
+                  className={`${child} ${child}--${generateTechName(item)}`}
+                > {item} </div> )
+
+              : <div className={child}>No Tech Listed</div>
+            }
           </div>
 
         )} />

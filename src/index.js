@@ -11,10 +11,10 @@ ReactDOM.render(
 
       <div className="App__Info">
         <p>Contact me: </p>
-        <a href="#">Github</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">Email</a>
+        <a href="https://github.com/Connorelsea">Github</a>
+        <a href="https://www.linkedin.com/in/elsea">LinkedIn</a>
+        <a href="https://twitter.com/Connorelsea_">Twitter</a>
+        <a href="mailto:connor@elsealabs.com">Email</a>
       </div>
 
       <Match pattern="/" component={App} />

@@ -12,12 +12,17 @@ import Elsea from "./Elsea"
 import Experience from "./Experience"
 import OpenSource from "./OpenSource"
 
+
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
 
-        <div className="App__Container App__Container--Upper">
+        <div
+          className="App__Container App__Container--Upper"
+        >
           <About />
           <ActionCall />
         </div>
